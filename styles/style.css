@@ -1,1 +1,169 @@
-/* место для вашего кода */
+body {
+    background-color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.body__content {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+.header {
+    height: 293px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo {
+    display: block;
+    padding: 0 auto 4px;
+    width: 148px;
+    height: 105px;
+}
+
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: circle;
+    font-size: 18px;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.address {
+    font-size: 18px;
+}
+
+.cover {
+  position: relative;
+}
+
+.cover:before {
+    background-image: url(../images/cover.jpg);
+}
+
+.overlay::before {
+    background-size: cover;
+}
+
+.overlay::after {
+    background-color: rgba(0, 0, 0, 0.5); /* Цвет оверлея: черный с полупрозрачностью 50% */
+}
+
+.overlay::after,
+.overlay::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+
+.cover__title {
+  padding-top: 165px;
+  padding-bottom: 135px;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  
+}
+
+.cover__description {
+    display: flex;
+    justify-content: end;
+    gap: 78px;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+
+.cover__description-text {
+    color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  
+}
+
+.bet-button {
+  background: none;  
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 0 32px;
+  height: 52px;
+}
+
+.aligned-text {
+    display: block;
+    
+}
+
+.aligned-text_center {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.aligned-text_right {
+    text-align: end;
+}
+
+
+.lots {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.about {
+    margin-bottom: 180px;
+}
+
+.footer {
+    padding-top: 92px;
+    padding-bottom: 90px;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
