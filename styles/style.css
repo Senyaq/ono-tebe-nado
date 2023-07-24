@@ -135,8 +135,6 @@ body {
 .lots {
     padding-top: 180px;
     padding-bottom: 180px;
-    display: flex;
-    flex-direction: column;
 }
 
 .lots__heading {
@@ -147,10 +145,10 @@ body {
 }
 
 .lots__card-list {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
+    row-gap: 25px;
 }
 
 .about {
