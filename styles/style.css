@@ -1,6 +1,6 @@
 body {
-  background-color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: normal;
   color: black;
@@ -14,7 +14,6 @@ body {
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
 /* HEADER */
@@ -40,6 +39,7 @@ body {
   gap: 32px;
   list-style: circle;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .header__links-list-item_no-bullit {
@@ -49,6 +49,7 @@ body {
 .header__address {
   font-style: normal;
   font-size: 18px;
+  line-height: 24.3px;
 }
 
 .header__link {
@@ -56,18 +57,18 @@ body {
 }
 
 .link_active {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .link_active::after {
-  content: ''; /* Пустой контент, чтобы создать псевдоэлемент */
+  content: ""; /* Пустой контент, чтобы создать псевдоэлемент */
   position: absolute; /* Абсолютное позиционирование псевдоэлемента */
   bottom: -2px; /* Отступ псевдоэлемента снизу (высота подчеркивания) */
   left: 0; /* Позиционируем псевдоэлемент относительно родительского элемента (слева) */
   width: 100%; /* Ширина псевдоэлемента будет равна ширине родительского элемента (текста) */
   height: 1px; /* Высота подчеркивания */
-  background-color: black; 
+  background-color: black;
 }
 
 /* COVER */
@@ -85,7 +86,12 @@ body {
 }
 
 .overlay::after {
-  background-color: rgba(0, 0, 0, 0.5); /* Цвет оверлея: черный с полупрозрачностью 50% */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Цвет оверлея: черный с полупрозрачностью 50% */
 }
 
 .overlay::after,
@@ -96,13 +102,13 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -1
+  z-index: -1;
 }
 
 .cover__title {
   padding-top: 165px;
   padding-bottom: 135px;
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
   font-size: 100px;
   font-weight: 700;
@@ -116,22 +122,23 @@ body {
   justify-content: end;
   gap: 78px;
   align-items: center;
-  padding-bottom: 50px;  
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  word-spacing: 26px;
 }
 
 .bet-button {
-  background: none;  
-  border: 1px solid #FFF;
-  color: #FFF;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 0 32px;
+  padding: 12px 32px;
   height: 100%;
 }
 
@@ -171,8 +178,8 @@ body {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  list-style-type: none;  
-    /* display: grid;
+  list-style-type: none;
+  /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     grid-gap: 25px; */
@@ -194,7 +201,7 @@ body {
 }
 
 .card__title {
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   font-size: 22px;
   line-height: 120%; /* 26.4px */
@@ -211,8 +218,9 @@ body {
 .card__text {
   display: flex;
   align-items: end;
-  color: #FFF;
-  padding: 0 40px 50px; 
+  color: #fff;
+  padding: 0 40px 50px;
+  line-height: 24px;
 }
 
 .card__link {
@@ -257,7 +265,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: black; 
+  background-color: black;
 }
 
 .logo__white {
@@ -274,7 +282,7 @@ body {
 
 .about__title {
   display: flex;
-  justify-content: start;  
+  justify-content: start;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
@@ -325,5 +333,4 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  
 }
